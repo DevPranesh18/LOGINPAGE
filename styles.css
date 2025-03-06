@@ -3,10 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-image: url('<a href='https://postimg.cc/5YD3y3qC' target='_blank'><img src='https://i.postimg.cc/Wz1f9YdX/Untitled-design.jpg' border='0' alt='Untitled-design'/></a>'); /* Updated image URL */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #f0f0f0; /* Light grey color */
     height: 100vh;
     display: flex;
     justify-content: center;

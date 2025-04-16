@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0; /* Light grey color */
+    background-color: #00000000; /* Light grey color */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -13,7 +13,7 @@ body {
 
 /* Login Container */
 .login-container {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.9);
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -26,13 +26,13 @@ body {
     margin-bottom: 10px;
     font-size: 2.5rem;
     font-weight: 700;
-    color: #2c3e50;
+    color: #ffffff;
 }
 
 .login-container p {
     margin-bottom: 20px;
     font-size: 1rem;
-    color: #666;
+    color: #ffffff;
 }
 
 /* Form Styles */
@@ -48,7 +48,7 @@ form input {
 }
 
 form input:focus {
-    border-color: #3498db;
+    border-color: #ffffff;
     box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
 }
 
@@ -56,7 +56,7 @@ form button {
     width: 100%;
     padding: 12px;
     margin-top: 20px;
-    background-color: #3498db;
+    background-color: #ffffff;
     color: white;
     border: none;
     border-radius: 8px;
@@ -67,18 +67,18 @@ form button {
 }
 
 form button:hover {
-    background-color: #2980b9;
+    background-color: #ffffff;
 }
 
 /* Signup Link */
 .signup-link {
     margin-top: 20px;
     font-size: 0.9rem;
-    color: #666;
+    color: #d5d5d5;
 }
 
 .signup-link a {
-    color: #3498db;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 500;
 }
